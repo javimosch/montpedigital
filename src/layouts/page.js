@@ -6,25 +6,28 @@ module.exports = async(app, options = {}) => {
         require('path').join(process.cwd(), 'src', 'pages')
     )
     pages = await Promise.all(
-        pages.map(pageName => {
+        pages
+        .map(pageName => {
             return (async() => {
+                let configPath = require('path').join(
+                    process.cwd(),
+                    'src',
+                    'pages',
+                    pageName,
+                    'index.js'
+                )
+                if (!(await sander.exists(configPath))) {
+                    return null
+                }
                 let config = requireFromString(
-                    (await sander.readFile(
-                        require('path').join(
-                            process.cwd(),
-                            'src',
-                            'pages',
-                            pageName,
-                            'index.js'
-                        )
-                    )).toString('utf-8')
+                    (await sander.readFile(configPath)).toString('utf-8')
                 )
                 config = await config(app)
                 let data = {
                     href: config.target || `/${pageName}`,
                     title: config.title || pageName
                 }
-                data = await app.language.translate(
+                data = await app.translate(
                     Object.assign(data, {
                         lang: options.lang
                     })
@@ -32,6 +35,7 @@ module.exports = async(app, options = {}) => {
                 return data
             })()
         })
+        .filter(promise => promise != null)
     )
     return {
         context: {
