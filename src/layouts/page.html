@@ -5,21 +5,11 @@
 %_head%
 
 <body>
-    <header>
-        <h1>MONTPE TECH SERVICES</h1>
-    </header>
-
-    %page_content%
-
-    <h4>{{locales.SITEMAP}}</h4>
-    <ul>
-        {{#each pages}}
-        <li><a href="{{href}}">{{title}}</a></li>
-        {{/each}}
-    </ul>
-
-
-    %_footer%
+    %_header%
+    <div class="headline_wrapper">
+        <h2>Développement web simplifié à Montpellier</h2>
+    </div>
+    %page_content% %_sitemap% %_footer%
 </body>
 
 </html>
