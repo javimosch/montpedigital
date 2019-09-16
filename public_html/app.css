@@ -8,7 +8,7 @@ body {
 
 header {
     background: url(/img/header.svg);
-    min-height: 250px;
+    min-height: 120px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -157,6 +157,40 @@ article {
     color: blue;
 }
 
+.contact {}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    background: #6a5acd;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+@media (min-width: 1048px) {
+    .contact form {
+    min-width: 600px;
+}
+}
+
+.contact input {}
+
+.contact button {}
+
+.contact textarea {
+    min-height: 150px;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.contact button:hover {}
+
 .footer_wave {
     height: 230px;
     background: url('/img/footer_wave.svg');
@@ -164,6 +198,8 @@ article {
     margin-top: 80px;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    top: 1px;
 }
 
 footer {
