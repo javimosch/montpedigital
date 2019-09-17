@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  builder:
+    restart: always
+    build: ./
+    container_name: montech_builder
+    environment:
+      - NODE_ENV=production
+    entrypoint: 
+      - yarn
+      - start   

@@ -1,0 +1,11 @@
+{
+  "name": "montech",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@gitlab.com:javimosch/montpesites_montpetechservices.git",
+  "author": "Javi <arancibiajav@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "montpesites": "^1.0.0"
+  }
+}
