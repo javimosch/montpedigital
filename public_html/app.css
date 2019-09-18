@@ -16,6 +16,7 @@ header {
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
+    background-color:#6a5acd;
 }
 header a{
     width:100%;
@@ -33,7 +34,6 @@ header h1 {
     justify-content: left;
     color: white;
     font-size: 28px;
-    background: #6a5acd;
     width: 100%;
     position: relative;
     padding-left: 20px;
@@ -83,7 +83,6 @@ header li a{
 header ul{
     padding: 0px;
     min-width: 200px;
-    background: slateblue;
     margin: 0px;
 }
 header li{
@@ -276,16 +275,22 @@ article {
 h4.sitemap{
     width: 100%;
     text-align: center;
+    margin-top: 50px;
 }
 .sitemap{padding: 0px;}
 .sitemap li{
     list-style: none;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: #53b553;
 }
 .sitemap a{
-    padding: 20px;
+    padding: 10px 40px;
     display: block;
-    background: slateblue;
-    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    text-align:left;
+    justify-content: start;
 }
 
 .footer_wave {
@@ -300,11 +305,12 @@ h4.sitemap{
 }
 
 footer {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    /*display: grid;
+    grid-template-columns: 50% 50%;*/
     background: slateblue;
     min-height: 300px;
     width: 100%;
+    display:flex;
     justify-content: center;
     align-items: center;
 }
@@ -333,10 +339,15 @@ h3,
 h4,
 h5,
 h6,
-p,
 a,
 li {
     font-family: 'Open Sans', sans-serif;
+}
+
+.contact img{
+    max-width: 100%;
+    float: left;
+    margin-right: 20px;
 }
 
 @media (max-width: 639px) {}
