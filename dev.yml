@@ -11,4 +11,4 @@ services:
       - ./:/app
     entrypoint: 
       - yarn
-      - build   
+      - start

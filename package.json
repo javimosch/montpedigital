@@ -7,5 +7,10 @@
   "license": "MIT",
   "dependencies": {
     "montpesites": "^1.0.0"
+  },
+  "scripts": {
+    "build": "ln -s /tmp/node_modules node_modules && ms --build",
+    "start": "sh ./dev.sh",
+    "dev": "ms --server --watch"
   }
 }

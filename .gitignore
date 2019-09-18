@@ -2,3 +2,7 @@ node_modules
 tmp
 temp
 .env
+public_html
+!public_html/app.cs
+!public_html/app.js
+!public_html/img
