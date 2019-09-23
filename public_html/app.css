@@ -6,10 +6,11 @@ body {
     align-items: center;
 }
 
-.header_wrapper{
-    background-color:#6a5acd;
+.header_wrapper {
+    background-color: #574895;
     width: 100%;
 }
+
 header {
     display: flex;
     justify-content: center;
@@ -18,16 +19,19 @@ header {
     max-width: 1200px;
     margin: 0 auto;
 }
-header a{
-    width:100%;
-    text-decoration:none;
+
+header a {
+    width: 100%;
+    text-decoration: none;
 }
-header h1 span{
+
+header h1 span {
     font-size: 11px;
     display: flex;
     align-items: center;
     padding: 0px 5px;
 }
+
 header h1 {
     margin: 0px;
     display: flex;
@@ -38,39 +42,43 @@ header h1 {
     position: relative;
     padding-left: 20px;
 }
-header h6{
+
+header h6 {
     display: none;
 }
+
 @media (max-width: 639px) {
-    header h6{
-    display: block;
-    margin: 0px;
-    background: slateblue;
-    width: 100%;
-    text-align: center;
-    color: white;
-}
-    header h1 span{
-    display: none;
-}
+    header h6 {
+        display: block;
+        margin: 0px;
+        background: #574895;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 10px;
+    }
+    header h1 span {
+        display: none;
+    }
     header {
-    flex-direction: column;
-}
+        flex-direction: column;
+    }
     header h1 {
         font-size: 25px;
         justify-content: center;
         padding-top: 18px;
         padding-left: 0px;
     }
-header ul{
-    width: 100%;
+    header ul {
+        width: 100%;
+    }
+    header li {}
+    header li a {
+        padding: 20px 0px;
+    }
 }
-header li{}
-header li a{
-    padding: 20px 0px;
-}
-}
-header li a{
+
+header li a {
     color: white;
     height: 38px;
     display: flex;
@@ -80,20 +88,21 @@ header li a{
     font-weight: bold;
 }
 
-header ul{
+header ul {
     padding: 0px;
     min-width: 200px;
     margin: 0px;
 }
-header li{
+
+header li {
     text-align: center;
     list-style: none;
 }
 
-.headline_wrapper{
+.headline_wrapper {
     min-height: calc(50vw);
     background-color: red;
-    background: url('https://images.unsplash.com/photo-1504609813442-a8924e83f76e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
+    background: url('/img/montech_bg.jpg');
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
@@ -102,30 +111,49 @@ header li{
     justify-content: center;
     align-items: center;
 }
-@media (max-width: 639px) {
-    .headline_wrapper{
-        min-height: calc(30vw);
-}
-}
-.headline_wrapper > h2{
-    text-align: center;
-    color: white;
-    background: #d7170b;
-    padding: 0px;
-    margin: 0px;
-}
 
 @media (max-width: 639px) {
-    .headline_wrapper > h2{
-        font-size:25px!important;
+    .headline_wrapper {
+        min-height: calc(30vw);
     }
 }
 
+.headline_wrapper>h2 {
+    text-align: center;
+    color: white;
+    background: #574895;
+    padding: 5px;
+    margin: 0px;
+    font-weight: bold;
+}
+
+@media (max-width: 639px) {
+    .headline_wrapper>h2 {
+        font-size: 18px!important;
+    }
+}
+
+iframe {
+    min-height: 300px;
+    width: -webkit-fill-available;
+}
+
 article {
-    max-width: 1024px;
-    margin-top: 50px;
-    width: 90%;
+    max-width: 1200px;
     padding: 0;
+    margin: 50px auto;
+    display: block;
+    width: fit-content;
+}
+
+@media (max-width: 639px) {
+    iframe {
+        width: -webkit-fill-available;
+    }
+    article {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 .services {
@@ -135,12 +163,19 @@ article {
 }
 
 @media (min-width: 1048px) {
+    article {
+        min-width: 900px;
+    }
+    iframe {
+        min-height: 600px;
+    }
     .services {
         grid-template-columns: 300px 300px 300px;
     }
 }
 
 @media (min-width: 1400px) {
+    article {}
     .services {
         grid-template-columns: 300px 300px 300px 300px;
     }
@@ -161,7 +196,7 @@ article {
 .service ul {
     margin: 0px;
     padding-left: 20px;
-    min-height: 170px;
+    min-height: 140px;
 }
 
 .service li {
@@ -220,7 +255,7 @@ article {
 .service p {
     color: #e0c4c4;
     font-weight: bold;
-    min-height: 175px;
+    min-height: 195px;
 }
 
 .service .price {
@@ -257,8 +292,8 @@ article {
 
 @media (min-width: 1048px) {
     .contact form {
-    min-width: 600px;
-}
+        min-width: 600px;
+    }
 }
 
 .contact input {}
@@ -278,27 +313,32 @@ article {
 
 .contact button:hover {}
 
-h4.sitemap{
+h4.sitemap {
     width: 100%;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 15px;
 }
-.sitemap{padding: 0px;
-    max-width: 100%;}
-.sitemap li{
+
+.sitemap {
+    padding: 0px;
+    max-width: 100%;
+}
+
+.sitemap li {
     list-style: none;
     border-radius: 20px;
     margin-bottom: 10px;
     padding: 0px 20px;
 }
-.sitemap a{
+
+.sitemap a {
     display: block;
     text-decoration: none;
     font-size: 12px;
-    text-align:left;
+    text-align: left;
     justify-content: start;
-    max-width:100%;
+    max-width: 100%;
 }
 
 .footer_wave {
@@ -315,10 +355,10 @@ h4.sitemap{
 footer {
     /*display: grid;
     grid-template-columns: 50% 50%;*/
-    background: slateblue;
+    background: #574895;
     min-height: 300px;
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -352,7 +392,7 @@ li {
     font-family: 'Open Sans', sans-serif;
 }
 
-.contact img{
+.contact img {
     max-width: 100%;
     float: left;
     margin-right: 20px;
