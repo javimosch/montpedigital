@@ -1,7 +1,8 @@
 module.exports = async app => {
     return {
         env: {
-            defaultLanguage: 'fr'
+            defaultLanguage: 'fr',
+            domainn: 'montech.misitioba.com'
         },
         plugins: {
             cleanDistFolders: {

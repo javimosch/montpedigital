@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://localhost:3000/</loc>
+    <loc>https://mydomain.com/</loc>
   </url>
   <url>
-    <loc>http://localhost:3000/existe-t-il-un-cloud-ethique/</loc>
+    <loc>https://mydomain.com/contact/</loc>
+  </url>
+  <url>
+    <loc>https://mydomain.com/about-javier-leandro-arancibia/</loc>
+  </url>
+  <url>
+    <loc>https://mydomain.com/exploring-montpesites-decentralized-self-hosted-ssg-tool-for-devs/</loc>
+  </url>
+  <url>
+    <loc>https://mydomain.com/quitter-google-la-experience-de-la-asso-framasoft/</loc>
+  </url>
+  <url>
+    <loc>https://mydomain.com/existe-t-il-un-cloud-ethique/</loc>
+  </url>
+  <url>
+    <loc>https://mydomain.com/legal-mentions/</loc>
+  </url>
+  <url>
+    <loc>https://mydomain.com/les-sept-principes-cooperatifs/</loc>
   </url>
 </urlset>
