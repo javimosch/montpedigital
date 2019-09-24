@@ -1,0 +1,28 @@
+<section class="hero is-link">
+    <div class="hero-body">
+        <div class="container">
+            <p class="title">
+                Blog
+            </p>
+            <p class="subtitle">
+                Ça marche tout simplement
+            </p>
+        </div>
+    </div>
+</section>
+
+{{#each pages}}
+
+
+<section class="hero is-light">
+    <div class="hero-body">
+        <div class="container">
+            <p class="title">
+                {{title}}
+            </p>
+            <a href="{{href}}" class="button is-link">Voir plus</a>
+        </div>
+    </div>
+</section>
+
+{{/each}}

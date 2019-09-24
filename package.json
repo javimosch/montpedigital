@@ -1,16 +1,10 @@
 {
-  "name": "montech",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@gitlab.com:javimosch/montpesites_montpetechservices.git",
-  "author": "Javi <arancibiajav@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "montpesites": "^1.0.2"
-  },
-  "scripts": {
-    "build": "ln -s /tmp/node_modules node_modules && ms --build",
-    "start": "sh ./dev.sh",
-    "dev": "ms --server --watch"
-  }
+    "name": "montech",
+    "author": "Javi <arancibiajav@gmail.com>",
+    "dependencies": {
+        "montpesites": "^1.1.1"
+    },
+    "scripts": {
+        "dev": "npx nodemon --exec 'node index.js' -e js,json --watch ms.config.js --watch package.json"
+    }
 }

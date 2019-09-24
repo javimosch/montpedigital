@@ -1,0 +1,22 @@
+<!-- USE_HANDLEBARS -->
+<!DOCTYPE html>
+<html>
+
+%_head%
+
+<body>
+    %_header%
+
+    <article>
+        <h1 class="is-size-3">{{title}}</h1>
+        %page_content%
+    </article>
+
+    <script src="https://utteranc.es/client.js" repo="javimosch/montech-website-comments" issue-term="pathname" theme="github-light" crossorigin="anonymous" async>
+    </script>
+
+    <hr/>
+    <a href="/">{{locales.MAIN_PAGE}}</a> %_footer%
+</body>
+
+</html>

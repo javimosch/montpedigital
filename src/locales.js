@@ -7,7 +7,8 @@ module.exports = async options => {
             SEND: 'Send',
             CONTACT_MESSAGE: 'Available also on WhatsApp',
             SITEMAP: 'Sitemap',
-            HQ_ADDRESS: "HQ Address"
+            HQ_ADDRESS: 'HQ Address',
+            ABOUT: 'About us'
         },
         fr: {
             HOME_HEADLINE: `Développement web professionnel à Montpellier`,
@@ -16,7 +17,8 @@ module.exports = async options => {
             SEND: 'Envoyer',
             CONTACT_MESSAGE: 'Disponible sur WhatsApp',
             SITEMAP: 'Plan du site',
-            HQ_ADDRESS: "Addrese QG"
+            HQ_ADDRESS: 'Addrese QG',
+            ABOUT: 'À propos'
         }
     }
 }

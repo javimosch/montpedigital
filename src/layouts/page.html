@@ -5,14 +5,35 @@
 %_head%
 
 <body>
-    %_header%
+    %_header% {{#if headline}}
     <div class="headline_wrapper">
         <h2 class="is-size-3">Développement web professionnel à Montpellier</h2>
     </div>
-    <article>
-        %page_content%
-    </article>
-    %_sitemap% %_footer%
+    {{/if}}
+
+    <div class="container">
+
+        {{#if hero}}
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container">
+                    <p class="title">
+                        {{hero.title}}
+                    </p>
+                    <p class="subtitle">
+                        {{hero.subtitle}}
+                    </p>
+                </div>
+            </div>
+        </section>
+        {{/if}} {{#if noWrapper}} %page_content% {{else}}
+        <article>
+            %page_content%
+        </article>
+        {{/if}}
+    </div>
+
+    %_footer%
 </body>
 
 </html>

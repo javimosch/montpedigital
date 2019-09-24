@@ -3,6 +3,8 @@ module.exports = async app => {
         layout: 'blog',
         head_title: 'Existe-t-il un cloud éthique ?',
         title: `Existe-t-il un cloud éthique ?`,
-        meta_keywords: `cloud ethique free software libre logiciel`
+        meta_keywords: `cloud ethique free software libre logiciel`,
+        article: {},
+        target: `/existe-t-il-un-cloud-ethique`
     }
 }

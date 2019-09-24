@@ -5,20 +5,35 @@
 %_head%
 
 <body>
-    %_header%
+    %_header% {{#if headline}}
+    <div class="headline_wrapper">
+        <h2 class="is-size-3">Développement web professionnel à Montpellier</h2>
+    </div>
+    {{/if}}
 
-    <article>
-        <h1 class="is-size-3">{{title}}</h1>
-        %page_content%
-    </article>
+    <div class="container">
 
-    <script src="https://utteranc.es/client.js" repo="javimosch/montech-website-comments" issue-term="pathname" theme="github-light" crossorigin="anonymous" async>
-    </script>
+        {{#if hero}}
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container">
+                    <p class="title">
+                        {{hero.title}}
+                    </p>
+                    <p class="subtitle">
+                        {{hero.subtitle}}
+                    </p>
+                </div>
+            </div>
+        </section>
+        {{/if}} {{#if noWrapper}} %page_content% {{else}}
+        <article>
+            %page_content%
+        </article>
+        {{/if}}
+    </div>
 
-    %_sitemap%
-
-    <hr/>
-    <a href="/">{{locales.MAIN_PAGE}}</a> %_footer%
+    %_footer%
 </body>
 
 </html>
