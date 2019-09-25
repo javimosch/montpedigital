@@ -1,7 +1,7 @@
 module.exports = async app => {
     return {
         layout: 'page',
-        head_title: 'MONTECH',
+        head_title: 'MONTPEDIGITAL',
         target: '/',
         title: 'I18N_MAIN_PAGE',
         headline: true,

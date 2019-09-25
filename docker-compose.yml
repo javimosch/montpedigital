@@ -4,7 +4,7 @@ services:
   builder:
     restart: "no"
     build: ./
-    container_name: montech_builder
+    container_name: montpedigital_builder
     environment:
       - NODE_ENV=production
     volumes:
